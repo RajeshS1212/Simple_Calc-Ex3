@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="icon" href="images/calcicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<center>
+    <h1>Calculator</h1>
+<div class="calculator">
+    Input A <input type="number" id="inputA" placeholder="Enter number A">
+    Input B <input type="number" id="inputB" placeholder="Enter number B">
+    <select id="operation">
+        <option value="addition">+</option>
+        <option value="subtraction">-</option>
+        <option value="multiplication">*</option>
+    </select>
+    <button onclick="calculate()">Result</button>
+    <div id="resultPopup" style="display: none;">
+        <p id="resultText"></p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+</div>
+</center>
+
+<script src="script.js"></script>
+
+</body>
+</html>
